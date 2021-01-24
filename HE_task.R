@@ -546,7 +546,7 @@ ggsave("Figure_8b.png", plot = last_plot(), dpi = 300)
 
 ### Figure 8 English Universities Non-UK domiciled HE student (2018-2019) FT (EU intake)
 
-domicile <- read_csv("data.csv", skip = 13, col_names = TRUE)
+domicile <- read_csv("https://www.hesa.ac.uk/data-and-analysis/students/table-28-(2018-19).csv", skip = 13, col_names = TRUE)
 
 domicile.clean <- domicile %>%
   filter(`Level of study` %in% "All") %>% 
